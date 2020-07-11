@@ -51,24 +51,15 @@ First of all, make sure you have following packages installed:
     \q
     ```
 
-- Python packages:
+- Python and NodeJS packages:
 
-  - See `requirements.txt` and `requirements_dev.txt`. From root directory run:
-
-    ```shell
-    pip install -r requirements.txt
-    pip install -r requirements_dev.txt
-    ```
-
-- NodeJS packages:
-
-  - From root directory, change to `frontend` and run:
+  - Simply head over to `scripts` directory and run (all files there should be executable):
 
     ```shell
-    npm i
+    ./installdeps.sh
     ```
 
 Now, head over to `scripts` directory and run `./mkenv.sh` (make sure it is executable)
 
-Create superuser and run, split your terminal and run both `./frontrun.sh` and `./backrun.sh`
+Create superuser, split your terminal and run both `./frontrun.sh` and `./backrun.sh`
 from `scripts` directory
