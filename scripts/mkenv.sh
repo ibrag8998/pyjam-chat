@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-function ask_vars {
+function ask_env_vars {
     printf "This project uses PostgreSQL. Fill fields below to connect to database\n\n"
 
     read -p "DB_NAME: " db_name
     read -p "DB_USER: " db_user
-    read -p "DB_PASSWORD: " db_password
+    read -sp "DB_PASSWORD: " db_password
 
     printf "\nNow, let's talk about host and port\n\n"
 
@@ -28,6 +28,6 @@ DB_PORT=$db_port"
     echo "$code" > ../.env
 }
 
-ask_vars
+ask_env_vars
 
 write_env
