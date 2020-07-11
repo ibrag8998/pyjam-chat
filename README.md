@@ -1,3 +1,3 @@
-# PyJAM Mess
+# PyJAM Chat
 
-Messenger built with Python, JavaScript, APIs, Markup. In development.
+Chatting application built with Python, JavaScript, APIs, Markup. In development.
