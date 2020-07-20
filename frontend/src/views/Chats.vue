@@ -1,8 +1,6 @@
 <template>
-  <nav class="panel is-primary">
-    <p class="panel-heading">
-      Chats
-    </p>
+  <div class="panel is-primary">
+    <p class="panel-heading">Chats</p>
     <div class="panel-block">
       <p class="control has-icons-left">
         <input class="input" type="text" placeholder="Search" />
@@ -11,16 +9,22 @@
         </span>
       </p>
     </div>
-    <ChatPanelBlock :chat="chat" v-for="chat of allChats" :key="chat.id" />
-  </nav>
+    <ChatPanelBlock :chat="chat" v-for="chat of allChats" :key="chat" />
+  </div>
 </template>
 
 <script>
-import ChatPanelBlock from "@/components/chats/ChatPanelBlock"
-import { mapGetters } from "vuex"
+import ChatPanelBlock from "@/components/chats/ChatPanelBlock";
+import { mapGetters } from "vuex";
 
 export default {
   components: { ChatPanelBlock },
-  computed: { ...mapGetters(["allChats"]) },
-}
+  computed: { ...mapGetters(["allChats"]) }
+};
 </script>
+
+<style lang="scss" scoped>
+.panel {
+  height: 100%;
+}
+</style>

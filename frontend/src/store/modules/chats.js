@@ -3,15 +3,32 @@ export default {
     chats: [
       {
         id: 1,
-        title: "Mother",
+        with: "Mother",
+        messages: [
+          {
+            id: 3,
+            text: "Well!",
+            sender: { id: 1, name: "John Doe" },
+          },
+          {
+            id: 2,
+            text: "Great!",
+            sender: { id: 2, name: "Chat master" },
+          },
+          {
+            id: 1,
+            text: "How are you?",
+            sender: { id: 1, name: "John Doe" },
+          },
+        ],
       },
       {
         id: 2,
-        title: "Friend",
+        with: "Friend",
       },
       {
         id: 3,
-        title: "Teacher",
+        with: "Teacher",
       },
     ],
   },

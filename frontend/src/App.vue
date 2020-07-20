@@ -17,6 +17,8 @@
 
   & > .container {
     height: 100%;
+    background-color: #fafafa;
+    box-shadow: 0 0 3px 0 rgba(127, 127, 127, 0.4);
   }
 }
 </style>

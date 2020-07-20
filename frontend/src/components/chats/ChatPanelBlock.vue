@@ -6,7 +6,7 @@
     <span class="panel-icon">
       <i class="far fa-user"></i>
     </span>
-    <div class="chat-title">{{ chat.title }}</div>
+    <div class="chat-title">{{ chat.with }}</div>
   </router-link>
 </template>
 
